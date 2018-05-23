@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+}
+
+.highlight {
+  color: #eb7907;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  cursor: pointer;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 30px 32px;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.nav li a:hover {
+  color: #eb7907;
+}
+
+.nav .active {
+  color: #eb7907;
+}
+
+.logo {
+  float: left !important;
+}
+
+.logo div span {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.logo div img {
+  vertical-align: middle;
+  height: 65px;
+  margin-left: 20px;
+  margin-top: 6.5px;
+}
+
+#content1 {
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 100%;
+  background: #333;
+  text-align: center;
+}
+
+#content1 h1 {
+  color: #FFF;
+  display: inline-block;
+  margin-top: 20vh;
+  font-family: 'Righteous', cursive;
+  font-size: 5em;
+}
+
+#content1 h2 {
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size: 3em;
+}
+
+#content2 {
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 100%;
+  background: #efefef;
+  text-align: center;
+}
+
+#content2 h3 {
+  color: #000;
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+  font-size: 2em;
+}
