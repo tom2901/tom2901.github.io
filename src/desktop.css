@@ -24,7 +24,7 @@ body {
   float: right;
 }
 
-.nav li a {
+.nav li a:not(.homelink) {
   cursor: pointer;
   display: block;
   color: #000;
@@ -48,13 +48,17 @@ body {
   float: left !important;
 }
 
-.logo div span {
+.homelink {
+  display: block;
+}
+
+.logo a span {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.logo div img {
+.logo a img {
   vertical-align: middle;
   height: 65px;
   margin-left: 20px;
