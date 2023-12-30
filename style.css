@@ -1,0 +1,53 @@
+body {
+    background-color: aquamarine;
+}
+
+.outline {
+    border-style: solid;
+    border: 5px solid #393939;
+    border-radius: 25px;
+    width: 20vw;
+    height: 30vh;
+    text-align: center;
+    margin-left: 40vw;
+    margin-top: 32vh;
+}
+
+#clicker {
+    margin-top: 4.5vh;
+    background-color: #393939;
+    height: 7vh;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#cookieLabel {
+    font-size: 25px;
+}
+
+#cookieCounter {
+    font-size: 30px
+}
+
+.container {
+    top: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+  }
+  
+
+.cookie {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-image: url("cookie.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }

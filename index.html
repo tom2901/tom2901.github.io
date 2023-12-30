@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookieClickers</title>
+  </head>
+  <body>
+
+    <div class="outline">
+        <button id="clicker" type="button" onclick="buttonOnClick()">Click Me!</button>
+        <p id="cookieLabel">Your Cookies: </p>
+        <p id="cookieCounter">0</p>
+    </div>
+
+    
+
+    <script>
+        x = 0;
+        function buttonOnClick() {
+            const divOuter = document.createElement("div");
+            const divInner = document.createElement("div");
+            divOuter.className = "container";
+            divOuter.id = "container" + x; 
+            divInner.className = "cookie";
+            id = "cookie" + x;
+            divInner.id = id;
+            divInner.onclick = explode;
+            divOuter.appendChild(divInner);
+            divOuter.style = "left: " + Math.floor(Math.random() * 100) +"vw;";
+            document.body.appendChild(divOuter);
+            cookie = document.getElementById(id);
+            document.getElementById("cookieCounter").innerHTML = x+1;
+            x++;
+            moveCookie(cookie);
+        }
+        var id = null;
+        function moveCookie(elem) {
+        var pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 1);
+        function frame() {
+                if (pos == 640) {
+                clearInterval(id);
+                } else {
+                pos++;
+                elem.style.top = pos + 'px';
+                }
+            }
+        } 
+        function explode() {
+            document.getElementById(this.id).style = "display: none;";
+        }
+    </script> 
+
+  </body>
+</html>
